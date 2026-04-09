@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniflex - Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏢 Sistema de Funcionários - Iniflex</h1>
+    <p>Gerenciamento completo via API REST</p>
+</header>
+
+<!-- AÇÕES -->
+<section class="actions">
+    <button onclick="carregarFuncionarios()">🔄 Atualizar</button>
+    <button onclick="aplicarAumento()">💰 Aplicar 10%</button>
+    <button onclick="removerJoao()">❌ Remover João</button>
+    <button onclick="mostrarAgrupados()">📊 Agrupar por Função</button>
+</section>
+
+<!-- TABELA -->
+<section class="tabela-section">
+    <h2>📋 Lista de Funcionários</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Data de Nascimento</th>
+                <th>Função</th>
+                <th>Salário</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabela">
+            <!-- Dados inseridos via JavaScript -->
+
+            <!-- DADOS FIXOS (caso queira deixar inicial) -->
+            <tr><td>Maria</td><td>18/10/2000</td><td>Operador</td><td>2009.44</td></tr>
+            <tr><td>João</td><td>12/05/1990</td><td>Operador</td><td>2284.38</td></tr>
+            <tr><td>Caio</td><td>02/05/1961</td><td>Coordenador</td><td>9836.14</td></tr>
+            <tr><td>Miguel</td><td>14/10/1988</td><td>Diretor</td><td>19119.88</td></tr>
+            <tr><td>Alice</td><td>05/01/1995</td><td>Recepcionista</td><td>2234.68</td></tr>
+            <tr><td>Heitor</td><td>19/11/1999</td><td>Operador</td><td>1582.72</td></tr>
+            <tr><td>Arthur</td><td>31/03/1993</td><td>Contador</td><td>4071.84</td></tr>
+            <tr><td>Laura</td><td>08/07/1994</td><td>Gerente</td><td>3017.45</td></tr>
+            <tr><td>Heloísa</td><td>24/05/2003</td><td>Eletricista</td><td>1606.85</td></tr>
+            <tr><td>Helena</td><td>02/09/1996</td><td>Gerente</td><td>2799.93</td></tr>
+
+        </tbody>
+    </table>
+</section>
+
+<!-- INFORMAÇÕES -->
+<section class="info-section">
+    <h2>📈 Informações</h2>
+
+    <div class="info-buttons">
+        <button onclick="mostrarAniversariantes()">🎂 Aniversariantes</button>
+        <button onclick="mostrarMaisVelho()">👴 Mais velho</button>
+        <button onclick="mostrarTotal()">💵 Total salários</button>
+        <button onclick="mostrarSalariosMinimos()">📊 Salários mínimos</button>
+    </div>
+
+    <div id="resultado" class="resultado-box">
+        <!-- Resultado aparece aqui -->
+    </div>
+</section>
+
+<footer>
+    <p>Projeto desenvolvido por Janine 🚀</p>
+    <p>Teste Desenvolvedor de Software Júnior - Contábil/Fiscal</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
